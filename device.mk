@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/whyred
+HAL_PATH := hardware/qcom-caf/whyred
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -457,6 +458,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/xiaomi
+
+QCOM_SOONG_NAMESPACE := $(HAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \
