@@ -120,7 +120,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service
+    android.hardware.camera.provider@2.4-service \
+    libpng.vendor:32
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5:64 \
@@ -277,6 +278,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -426,6 +428,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
+    libsqlite.vendor:64 \
     rild
 
 PRODUCT_PACKAGES += \
@@ -446,7 +449,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
-    android.frameworks.sensorservice@1.0.vendor
+    android.frameworks.sensorservice@1.0.vendor \
+    libpower.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
