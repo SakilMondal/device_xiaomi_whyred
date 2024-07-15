@@ -107,9 +107,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sdm660
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
-# Override hals
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-whyred
-
 # Partitions
 -include vendor/superior/config/BoardConfigReservedSize.mk
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
